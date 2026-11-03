@@ -5,6 +5,7 @@ using namespace std;
 
 NumberArray::NumberArray(int size) {
 	data = new double[size];
+	this->size = size;
 
 	for (int i = 0; i < size; i++) {
 		data[i] = 0.0;
