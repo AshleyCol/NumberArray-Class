@@ -14,3 +14,23 @@ NumberArray::NumberArray(int size) {
 NumberArray::~NumberArray() {
 	delete[] data;
 }
+
+void NumberArray::setNumber(int index, double value) {
+	if (index < size) {
+		data[index] = value;
+	}
+	else {
+		cout << "Invalid index found when entering number, please enter an index between 0 and " << size - 1 << endl;
+	}
+	return;
+}
+
+double NumberArray::getNumber(int index) const {
+	if (index < size) {
+		return data[index];
+	}
+	else {
+		cout << "Invalid index found when getting number, please enter an index between 0 and " << size - 1 << endl;
+		return 0.0;
+	}
+}
