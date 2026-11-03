@@ -1,6 +1,9 @@
 #include <iostream>
+#include "NumberArray.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	
 }
